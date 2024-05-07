@@ -23,15 +23,12 @@
   $contact->from_email = $_POST['email'];
   $contact->subject = 'Request for a quote';
 
-  // Uncomment below code if you want to use SMTP to send emails. You need to enter your correct SMTP credentials
-  /*
   $contact->smtp = array(
-    'host' => 'example.com',
-    'username' => 'example',
-    'password' => 'pass',
+    'host' => 'mail.privateemail.com',
+    'username' => 'hugosoto@sprintxlatam.com',
+    'password' => '33JrxY_Q3BV4yYmPK7Aj',
     'port' => '587'
   );
-  */
 
   $contact->add_message( $_POST['departure'], 'City of Departure');
   $contact->add_message( $_POST['delivery'], 'Delivery City');
