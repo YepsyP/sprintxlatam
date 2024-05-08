@@ -7,7 +7,7 @@
   */
 
   // Replace contact@example.com with your real receiving email address
-  $receiving_email_address = 'contact@example.com';
+  $receiving_email_address = 'hugosoto@sprintxlatam.com';
 
   if( file_exists($php_email_form = '../assets/vendor/php-email-form/php-email-form.php' )) {
     include( $php_email_form );
@@ -27,7 +27,7 @@
     'host' => 'mail.privateemail.com',
     'username' => 'hugosoto@sprintxlatam.com',
     'password' => '33JrxY_Q3BV4yYmPK7Aj',
-    'port' => '587'
+    'port' => '993'
   );
 
   $contact->add_message( $_POST['departure'], 'City of Departure');
