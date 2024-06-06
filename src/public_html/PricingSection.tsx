@@ -7,7 +7,7 @@ interface PricingProps {
 
 const PricingSection: React.FC<PricingProps> = ({ title, price, description, delay }) => {
     return (
-        <div className="col-lg-3" data-aos="fade-up" data-aos-delay={delay}>
+        <div className="col-xl-3" data-aos="fade-up" data-aos-delay={delay}>
             <div className="pricing-item cards-pricing">
                 <h3>{title}</h3>
                 <h4><span>Desde </span><sup>$</sup>{price}</h4>

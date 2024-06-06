@@ -1,5 +1,5 @@
 import Hero from './Hero.tsx'
-import imgAboutHome from './assets_public/img/vectorizacion_db.jpeg'
+import imgAboutHome from '../assets/img/vectorizacion_db.jpeg'
 
 const textAbout = "En Sprintxlatam, nos dedicamos a brindar soluciones logísticas integrales y personalizadas que responden a las necesidades de un mercado globalizado. Fundada en el año 2024, nuestra empresa ha crecido hasta convertirse en un referente en la industria gracias a nuestro enfoque en la innovación, la eficiencia y el compromiso con la calidad. Nos especializamos en la gestión y optimización de la cadena de suministro, ofreciendo desde el transporte y almacenamiento hasta servicios de distribución y gestión aduanera. Nuestro equipo está compuesto por profesionales altamente cualificados y apasionados por lograr que cada operación sea exitosa."
 
@@ -16,7 +16,9 @@ const MembersItem: React.FC<TeamProps> = ({ name, ocupation, description, images
     return (
         <div className="col-lg-4 col-md-6 d-flex">
             <div className="member">
-                <img src={`src/public_html/assets_public/img/${images}`} className="img-fluid img-thumbnail"  alt="" />
+                <div className="member-img">
+                    <img src={`src/assets/img/${images}`} className="img-fluid" alt={name} />
+                </div>
                 <div className="member-content">
                     <h4>{name}</h4>
                     <span>{ocupation}</span>
