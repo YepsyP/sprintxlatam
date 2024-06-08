@@ -1,5 +1,5 @@
-import imgFuture from '../assets/img/future_shiping.jpeg'
-import imgAboutHome from '../assets/img/computadoras_importacion.jpeg'
+import imgFuture from '/assets/img/future_shiping.jpeg'
+import imgAboutHome from '/assets/img/computadoras_importacion.jpeg'
 import PricingSection from './PricingSection';
 
 interface ServiceItemProps {
@@ -54,7 +54,7 @@ const ServiceUsItem: React.FC<ServiceUsProps> = ({ images, title, description, d
         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={delay}>
             <div className="card">
                 <div className="card-img">
-                    <img src={`src/assets/img/${images}`} alt="" className="img-fluid" />
+                    <img src={`/assets/img/${images}`} alt="" className="img-fluid" />
                 </div>
                 <h3><a href="" className="stretched-link">{title}</a></h3>
                 <p>
@@ -70,7 +70,7 @@ const FeaturedUsItem: React.FC<FeaturesSectionProps2> = ({ title, description1, 
         <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div className="col-md-5">
-                <img src={`src/assets/img/${images}`} className="img-fluid" alt="" />
+                <img src={`/assets/img/${images}`} className="img-fluid" alt="" />
             </div>
             <div className="col-md-7">
                 <h3>{title}</h3>
@@ -93,7 +93,7 @@ const FeaturedUsItem2: React.FC<FeaturesSectionProps> = ({ title, description1, 
         <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div className="col-md-5 order-1 order-md-2">
-                <img src={`src/assets/img/${images}`} className="img-fluid" alt="" />
+                <img src={`/assets/img/${images}`} className="img-fluid" alt="" />
             </div>
             <div className="col-md-7 order-2 order-md-1">
                 <h3>{title}</h3>

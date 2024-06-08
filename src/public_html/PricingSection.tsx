@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 interface PricingProps {
     title: string;
     price: number;
@@ -14,7 +16,9 @@ const PricingSection: React.FC<PricingProps> = ({ title, price, description, del
                 <p>
                     {description}
                 </p>
-                <a href="#" className="buy-btn">Comprar ahora</a>
+                <Link to='/get-a-quote' className="buy-btn">
+                    Comprar ahora
+                </Link>
             </div>
         </div>
     );

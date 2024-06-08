@@ -55,7 +55,7 @@ export function Header() {
         <header id="header" className="header d-flex align-items-center fixed-top">
             <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
                 <Link to='/' className="logo d-flex align-items-center">
-                    <h1>Sprintxlatam</h1>
+                    <h1>SprintXLatam</h1>
                 </Link>
                 <i className="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
                 <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>

@@ -4,8 +4,8 @@ export function Footer() {
             <div className="container">
                 <div className="row gy-4 d-flex justify-content-around">
                     <div className="col-lg-5 col-md-12 footer-info">
-                        <a href="index.html" className="logo d-flex align-items-center">
-                            <span>Sprintxlatam</span>
+                        <a href="/" className="logo d-flex align-items-center">
+                            <span>SprintXLatam</span>
                         </a>
                         <p>La innovación tecnológica es el núcleo de nuestra estrategia logística, garantizando eficiencia y precisión. Utilizamos lo último en software de gestión de almacenes y sistemas de seguimiento en tiempo real para asegurar la entrega puntual y segura de cada paquete.</p>
                         <div className="social-links d-flex mt-4">
@@ -40,10 +40,10 @@ export function Footer() {
 
             <div className="container mt-4">
                 <div className="copyright">
-                    &copy; Copyright <strong><span>Sprintxlatam</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Sprintxlatam</span></strong>.
                 </div>
                 <div className="credits">
-                    Designed by <a href=""></a>
+                    Diseñado por SprintXLatam <a href=""></a>
                 </div>
             </div>
 
