@@ -123,7 +123,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url('./assets/img/page-header.jpg');
+  background-image: url('/assets/img/page-header.jpg');
 }
 
 .breadcrumbs .page-header:before {
@@ -801,7 +801,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("./assets/img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("/assets/img/cta-bg.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1588,7 +1588,7 @@ section {
   width: 100%;
   min-height: 50vh;
   background-color: var(--color-secondary);
-  background-image: url("./assets/img/hero-bg.png");
+  background-image: url("/assets/img/hero-bg.png");
   background-size: cover;
   background-position: center;
   position: relative;
