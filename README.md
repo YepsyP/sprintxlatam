@@ -48,11 +48,9 @@ Paso 3: Configurar nginx.conf
 Crea un archivo nginx.conf en el directorio raíz del proyecto con el siguiente contenido:
 
 Copiar código en tu archivo nginx.conf: 
-server { 
+server {
   listen 80;
-
-  server_name localhost;
-  
+  server_name localhost;  
     location / {
         root /usr/share/nginx/html;
         index index.html index.htm;
