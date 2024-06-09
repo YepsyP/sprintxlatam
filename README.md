@@ -10,7 +10,7 @@ Docker Compose
 
 Nginx Proxy Manager
 
-# Versión de node, npm y vite de mi proyecto
+# Versión de node, npm y vite del proyecto
 
 node v20.11.1
 
