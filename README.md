@@ -71,6 +71,7 @@ server  {
     try_files $uri $uri/ /index.html;
     
   }
+  
   location /assets/ {
   
     alias /usr/share/nginx/html/assets/;
