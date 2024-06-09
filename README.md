@@ -8,7 +8,9 @@ Nginx Proxy Manager
 
 # Instalación: 
 Paso 1: Clonar el Repositorio 
+
 Copiar el código en tu bash: 
+
 git clone -b webReact https://github.com/YepsyP/sprintxlatam.git proyecto-sxl 
 cd proyecto-sxl 
 
