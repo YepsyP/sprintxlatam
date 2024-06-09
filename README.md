@@ -10,6 +10,40 @@ Docker Compose
 
 Nginx Proxy Manager
 
+# Versión de node, npm y vite de mi proyecto
+
+node v20.11.1
+
+npm v10.2.4
+
+├─┬ @vitejs/plugin-react-swc@3.6.0
+  └── vite@5.2.11
+# 
+
+# Dependencias de nivel superior instaladas en el proyecto
+my-react-vite-project@1.0.0 /path/to/your/project
+├── @fortawesome/fontawesome-free@6.5.2
+├── @fortawesome/fontawesome-svg-core@6.5.2
+├── @fortawesome/free-solid-svg-icons@6.5.2
+├── @fortawesome/react-fontawesome@0.2.1
+├── @types/react-dom@18.3.0
+├── @types/react-router-dom@5.3.3
+├── @types/react@18.3.2
+├── @typescript-eslint/eslint-plugin@7.9.0
+├── @typescript-eslint/parser@7.9.0
+├── @vitejs/plugin-react-swc@3.6.0
+├── bootstrap-icons@1.11.3
+├── bootstrap@5.3.3
+├── eslint-plugin-react-hooks@4.6.2
+├── eslint-plugin-react-refresh@0.4.7
+├── eslint@8.57.0
+├── react-dom@18.3.1
+├── react-router-dom@6.23.1
+├── react@18.3.1
+├── styled-components@6.1.11
+├── typescript@5.4.5
+└── vite@5.2.11
+
 # Instalación:
 
 Paso 1: Clonar el Repositorio 
