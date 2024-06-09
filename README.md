@@ -21,7 +21,6 @@ Crea un Dockerfile en el directorio raíz del proyecto con el siguiente contenid
 
 Copiar el código en tu Dockerfile:
 
-Etapa 1: Construcción de la aplicación
 FROM node:16-alpine as build
 
 WORKDIR /app
@@ -30,7 +29,6 @@ COPY package*.json ./ RUN npm install
 
 COPY . . RUN npm run build
 
-Etapa 2: Servir la aplicación con Nginx
 FROM nginx:alpine
 
 COPY --from=build /app/dist /usr/share/nginx/html
@@ -48,18 +46,17 @@ Paso 3: Configurar nginx.conf
 Crea un archivo nginx.conf en el directorio raíz del proyecto con el siguiente contenido:
 
 Copiar código en tu archivo nginx.conf: 
-server {
+server  {
   listen 80;
   server_name localhost;  
-    location / {
-        root /usr/share/nginx/html;
-        index index.html index.htm;
-        try_files $uri $uri/ /index.html;
-    }
-  
-    location /assets/ {
-        alias /usr/share/nginx/html/assets/;
-    }
+  location / {
+    root /usr/share/nginx/html;
+    index index.html index.htm;
+    try_files $uri $uri/ /index.html;
+  }
+  location /assets/ {
+    alias /usr/share/nginx/html/assets/;
+  }
 }
 
 ////////////////
