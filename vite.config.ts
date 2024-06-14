@@ -5,10 +5,6 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig({
   base: './',
   plugins: [react()],
-  server: {
-    host: true,
-    port: 8011
-  },
   build: {
     outDir: 'dist',  // Este es el directorio de salida para la compilación de producción
     assetsDir: 'assets',  // Este es el directorio donde Vite colocará los activos durante la compilación

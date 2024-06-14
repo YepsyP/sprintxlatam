@@ -65,6 +65,7 @@ export function Header() {
                         <li><Link to='/about'>Acerca de nosotros</Link></li>
                         <li><Link to='/pricing'>Precios</Link></li>
                         <li><Link to='/contact'>Contactos</Link></li>
+                        <li><a href='https://sprintxlatam.blogspot.com/'>Blog</a></li>
                         <li><a href="https://wa.me/+59163567564" className="whatsapp-button" target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp whatsapp-icon"></i> Chatea con nosotros</a></li>
                         <li><Link to='/get-a-quote' className='get-a-quote'>Consigue una cotización</Link></li>
                     </ul>

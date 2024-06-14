@@ -22,7 +22,7 @@ const Hero: React.FC<HeroProps> = ({ title, text, page }) => {
       <nav>
         <div className="container">
           <ol>
-            <li><a href="/">Home</a></li>
+            <li><a href="/">Inicio</a></li>
             <li>{page}</li>
           </ol>
         </div>
