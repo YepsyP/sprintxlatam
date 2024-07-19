@@ -1,0 +1,27 @@
+import { Link } from 'react-router-dom';
+
+interface PricingProps {
+    title: string;
+    price: number;
+    description: string;
+    delay: number;
+}
+
+const PricingSection: React.FC<PricingProps> = ({ title, price, description, delay }) => {
+    return (
+        <div className="col-xl-3" data-aos="fade-up" data-aos-delay={delay}>
+            <div className="pricing-item cards-pricing">
+                <h3>{title}</h3>
+                <h4><span>Desde </span><sup>$</sup>{price}</h4>
+                <p>
+                    {description}
+                </p>
+                <Link to='/get-a-quote' className="buy-btn">
+                    Comprar ahora
+                </Link>
+            </div>
+        </div>
+    );
+};
+
+export default PricingSection;
