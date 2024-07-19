@@ -13,8 +13,8 @@ const Hero: React.FC<HeroProps> = ({ title, text, page }) => {
         <div className="container position-relative">
           <div className="row d-flex justify-content-center">
             <div className="col-lg-6 text-center">
-              <h2>{title}</h2>
-              <p>{text}</p>
+              <h2 data-aos="fade-up">{title}</h2>
+              <p data-aos="fade-up">{text}</p>
             </div>
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import imgFuture from '/assets/img/future_shiping.jpeg'
 import imgAboutHome from '/assets/img/computadoras_importacion.jpeg'
 import PricingSection from './PricingSection';
@@ -54,7 +56,14 @@ const ServiceUsItem: React.FC<ServiceUsProps> = ({ images, title, description, d
         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={delay}>
             <div className="card">
                 <div className="card-img">
-                    <img src={`/assets/img/${images}`} alt="" className="img-fluid" />
+                    <LazyLoadImage 
+                        src={`/assets/img/${images}`} 
+                        alt="" 
+                        className="img-fluid" 
+                        effect="blur" 
+                        wrapperProps={{style: {transitionDelay: "1s"},
+                        }}
+                    />
                 </div>
                 <h3><a href="" className="stretched-link">{title}</a></h3>
                 <p>
@@ -70,7 +79,14 @@ const FeaturedUsItem: React.FC<FeaturesSectionProps2> = ({ title, description1, 
         <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div className="col-md-5">
-                <img src={`/assets/img/${images}`} className="img-fluid" alt="" />
+                <LazyLoadImage 
+                    src={`/assets/img/${images}`} 
+                    alt="" 
+                    className="img-fluid" 
+                    effect="blur" 
+                    wrapperProps={{style: {transitionDelay: "1s"},
+                    }}
+                />
             </div>
             <div className="col-md-7">
                 <h3>{title}</h3>
@@ -93,7 +109,7 @@ const FeaturedUsItem2: React.FC<FeaturesSectionProps> = ({ title, description1, 
         <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div className="col-md-5 order-1 order-md-2">
-                <img src={`/assets/img/${images}`} className="img-fluid" alt="" />
+                <LazyLoadImage src={`/assets/img/${images}`} className="img-fluid" alt="" effect="blur" wrapperProps={{style: {transitionDelay: "1s"},}}/>
             </div>
             <div className="col-md-7 order-2 order-md-1">
                 <h3>{title}</h3>
@@ -120,7 +136,7 @@ export function Home() {
                         </div>
 
                         <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                            <img src={imgFuture} className="img-fluid mb-3 mb-lg-0" alt="" />
+                            <LazyLoadImage src={imgFuture} className="img-fluid mb-3 mb-lg-0" alt="" effect="blur" wrapperProps={{style: {transitionDelay: "1s"},}}/>
                         </div>
 
                     </div>
@@ -159,7 +175,7 @@ export function Home() {
 
                     <div className="row gy-4">
                         <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                            <img src={imgAboutHome} className="img-fluid" alt="" />
+                            <LazyLoadImage src={imgAboutHome} className="img-fluid" alt="" effect="blur" wrapperProps={{style: {transitionDelay: "1s"},}}/>
                         </div>
                         <div className="col-lg-6 content order-last  order-lg-first">
                             <h3>Sobre Nosotros</h3>

@@ -11,8 +11,8 @@ export function Pricing() {
                 <div className="container aos-init aos-animate" data-aos="fade-up">
 
                     <div className="section-header">
-                        <span>Precios</span>
-                        <h2>Precios</h2>
+                        <span data-aos="fade-up">Precios</span>
+                        <h2 data-aos="fade-up">Precios</h2>
 
                     </div>
 

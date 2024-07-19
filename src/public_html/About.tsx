@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import Hero from './Hero.tsx'
 import imgAboutHome from '/assets/img/vectorizacion_db.jpeg'
 
@@ -17,12 +19,12 @@ const MembersItem: React.FC<TeamProps> = ({ name, ocupation, description, images
         <div className="col-lg-4 col-md-6 d-flex">
             <div className="member">
                 <div className="member-img">
-                    <img src={`/assets/img/${images}`} className="img-fluid" alt={name} />
+                    <LazyLoadImage src={`/assets/img/${images}`} className="img-fluid" alt={name} effect="blur" wrapperProps={{style: {transitionDelay: "1s"},}}/>
                 </div>
                 <div className="member-content">
-                    <h4>{name}</h4>
+                    <h4 data-aos="fade-up">{name}</h4>
                     <span>{ocupation}</span>
-                    <p>
+                    <p data-aos="fade-up">
                         {description}
                     </p>
                     <div className="social">
@@ -46,7 +48,7 @@ export function About() {
 
                     <div className="row gy-4">
                         <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                            <img src={imgAboutHome} className="img-fluid" alt="" />
+                            <LazyLoadImage src={imgAboutHome} className="img-fluid" alt="" effect="blur" wrapperProps={{style: {transitionDelay: "1s"},}}/>
                         </div>
                         <div className="col-lg-6 content order-last  order-lg-first">
                             <h3>Sobre Nosotros</h3>
