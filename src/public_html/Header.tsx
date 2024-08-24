@@ -20,20 +20,16 @@ export function Header() {
             });
         });
 
+        // Close the mobile nav when a link is clicked
         document.querySelectorAll('#navbar a').forEach(navbarlink => {
-            const link = navbarlink as HTMLAnchorElement;
-            if (!link.hash) return;
-
-            const section = document.querySelector(link.hash);
-            if (!section) return;
-
-            link.addEventListener('click', () => {
+            navbarlink.addEventListener('click', () => {
                 if (body?.classList.contains('mobile-nav-active')) {
                     mobileNavToggle();
                 }
             });
         });
 
+        // Sticky header on scroll
         const selectHeader = document.querySelector('#header');
         const handleScroll = () => {
             if (selectHeader) {
@@ -43,9 +39,13 @@ export function Header() {
 
         document.addEventListener('scroll', handleScroll);
 
+        // Cleanup event listeners when the component is unmounted
         return () => {
             document.querySelectorAll('.mobile-nav-toggle').forEach(el => {
                 el.removeEventListener('click', mobileNavToggle);
+            });
+            document.querySelectorAll('#navbar a').forEach(navbarlink => {
+                navbarlink.removeEventListener('click', mobileNavToggle);
             });
             document.removeEventListener('scroll', handleScroll);
         };
@@ -65,6 +65,7 @@ export function Header() {
                         <li><Link to='/about'>Acerca de nosotros</Link></li>
                         <li><Link to='/pricing'>Precios</Link></li>
                         <li><Link to='/contact'>Contactos</Link></li>
+                        <li><Link to='/upload-files'>Subir Archivos</Link></li>
                         <li><a href='https://sprintxlatam.blogspot.com/'>Blog</a></li>
                         <li><a href="https://wa.me/+59163567564" className="whatsapp-button" target="_blank" rel="noopener noreferrer"><i className="bi bi-whatsapp whatsapp-icon"></i> Chatea con nosotros</a></li>
                         <li><Link to='/get-a-quote' className='get-a-quote'>Consigue una cotización</Link></li>
